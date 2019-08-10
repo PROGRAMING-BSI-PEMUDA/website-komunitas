@@ -1,116 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-
-	<!-- Icon Logo -->
-	<link rel="../shortcut icon" href="assets/img/logo.png" type="image/x-icon">
-	<!-- Material Design for Bootstrap CSS -->
-	<link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/'); ?>bootstrap.min.css">
-	<link rel="stylesheet" href="<?= base_url('assets/bootstrap/css/'); ?>bootstrap.css">
-	<!-- fontawesome-->
-	<link rel="stylesheet" href="<?= base_url('assets/font-awesome/'); ?>css/font-awesome.css">
-	<!-- Material Design Bootstrap -->
-	<link href="<?= base_url('assets/bootstrap/css/'); ?>mdb.min.css" rel="stylesheet">
-	<!-- Your custom styles (optional) -->
-	<link href="<?= base_url('assets/bootstrap/css/'); ?>style.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home of Clothes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/style.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/bootstrap-4.3.1/dist/css/bootstrap.min.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/fontawesome-free-5.8.2-web/css/all.min.css') ?>">
+    <script src="jquery/jquery-3.4.1.min.js"></script>
 </head>
-<body><!--Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark secondary-color lighten-1">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
-    aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-555" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">Dropdown
-        </a>
-        <div class="dropdown-menu dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-555">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="index.php" class="brand"><img src="<?= base_url('assets/img/klothee-2.png') ?>"></a>  
+        <div class="menu">
+            <ul class="submenu">
+                <li><a class="active" href="index.php">Home</a></li>
+                <li><a href="product.php">Product</a></li>
+                <li><a href="about.php">About</a></li>
+            </ul>
+            <button class="nav-bar"><i class="fas fa-bars"></i></button>
         </div>
-      </li>
-    </ul>
-    <ul class="navbar-nav ml-auto nav-flex-icons">
-      <li class="nav-item">
-        <a class="nav-link waves-effect waves-light">1
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      <li class="nav-item avatar dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="rounded-circle z-depth-0"
-            alt="avatar image">
-        </a>
-        <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
-          aria-labelledby="navbarDropdownMenuLink-55">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+    </div>  
+    
+    <!-- Header Slide Mobile -->
+    <div class="mobile-header">
+        <div class="wrapper">
+            <a class="text-center" href="index.php"><img class="img-fluid w-50" src="img/klothee-1-white.png"></a>
+            <ul class="responsive-menu mt-5">
+                <a href="index.php"><li><i class="fas fa-home pr-3"></i>Home</li></a>
+                <a href="product.php"><li><i class="fa fa-tshirt pr-3"></i>Product</li></a>
+                <a href="about.php"><li><i class="fas fa-user-friends pr-3"></i>About</li></a>
+            </ul>
         </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!--/.Navbar -->
-	<h1 class="jumbotron"><i class="fa fa-home"></i> My Website PROGRAMMING</h1>
-	<button type="button" class="btn btn-primary">Primary</button>
-	<button type="button" class="btn btn-secondary">Secondary</button>
-	<button type="button" class="btn btn-success">Success</button>
-	<button type="button" class="btn btn-danger">Danger</button>
-	<button type="button" class="btn btn-warning">Warning</button>
-	<button type="button" class="btn btn-info">Info</button>
-	<button type="button" class="btn btn-light">Light</button>
-	<button type="button" class="btn btn-dark">Dark</button>
-	<button type="button" class="btn btn-link">Link</button>
-<!-- Default button -->
-<button type="button" class="btn btn-default">Default</button>
+    </div>
+    
+    <!-- Slogan Banner -->
+    <div class="container container-fluid slogan-home">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6 text-right">
+                <h3 class="display-3"><b>We make it better <span class="highlight"> for you</span></b></h3>
+            </div>
+            <div class="col-lg-6 border-left">
+                <p class="display-5 lead text-muted slogan-home-desc">Klothee memproduksi kaos dan kemeja
+                        yang dibuat  dengan menyesuaikan bahan sesuai keinginan anda. 
+                        Terdapat berbagai pilihan model dengan pembuatan yang modern dan berkualitas.</p>
+            </div>
+        </div>
+    </div>
 
-<!-- Secondary button -->
-<button type="button" class="btn btn-secondary">Secondary</button>
+    <!-- Image Banner -->
+    <div class="jumbotron">
+        <h3>It's Not About Brand, <br> Brand is Just a Label. <br> It's All About <span style="font-family: brush script mt; font-size: 35px;"> Style</span></h3>
+    </div>
 
-<!-- Indicates a successful or positive action -->
-<button type="button" class="btn btn-success">Success</button>
+    <!-- Floating Box -->
+    <div class="service shadow">
+        <div class="row">
+            <div class="col-lg-2"><i class="fa fa-tshirt"></i></div>
+            <div class="col-lg-10">
+                <p><b>Kami Membuat yang Terbaik</b></p>
+                <p>Produk dengan pembuatan yang sudah modern.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"><i class="fa fa-socks"></i></div>
+            <div class="col-lg-10">
+                <p><b>Cocok Untuk Segala Usia</b></p>
+                <p>Dengan desain fleksibel yang keren untuk siapa saja.</p>
+            </div>
+        </div>
+    </div>
 
-<!-- Contextual button for informational alert messages -->
-<button type="button" class="btn btn-info">Infos</button>
+    <div class="close-bg"></div>
 
-<!-- Indicates caution should be taken with this action -->
-<button type="button" class="btn btn-warning">Warning</button>
+    <!-- Product Thumbnail -->
+    <div class="product">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-lg-6">
+                    <img src="<?= base_url('assets/img/home-thumbnail.jpg') ?>" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow p-5">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center m-0">
+                            <h4 class="card-title">Ayo Shopping !</h4>
+                            <p class="card-text">Lihat produk terbaru kami</p>
+                            <a href="product.php"><button class="btn btn-info">Shopping</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- Indicates a dangerous or potentially negative action -->
-<button type="button" class="btn btn-danger">Danger</button>
+    <!-- Footer -->
+    <div class="footer">
+        <img src="<?= base_url('assets/img/klothee-1-white.png') ?>">
+        <p>Copyright &copy; 2019 <a href="index.php" class="highlight">Klothee Inc.</a></p>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
-
-	<script src="<?= base_url('assets/jquery/'); ?>jquery-3.4.0.js"></script>
-
-	<script src="<?= base_url('assets/bootstrap/js/'); ?>bootstrap.js"></script> 
-
-	<!-- JQuery -->
-	<script type="text/javascript" src="<?= base_url('assets/bootstrap/js/'); ?>jquery-3.4.1.min.js"></script>
-	<!-- Bootstrap tooltips -->
-	<script type="text/javascript" src="<?= base_url('assets/bootstrap/js/'); ?>popper.min.js"></script>
-	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript" src="<?= base_url('assets/bootstrap/js/'); ?>bootstrap.min.js"></script>
-	<!-- MDB core JavaScript -->
-	<script type="text/javascript" src="<?= base_url('assets/bootstrap/js/'); ?>mdb.min.js"></script>
